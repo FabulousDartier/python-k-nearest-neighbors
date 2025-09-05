@@ -14,11 +14,6 @@ The dataset contains the following columns:
 - `diagnosis`: Diagnosis result (`B` for benign, `M` for malignant).
 - Various features such as `radius_mean`, `texture_mean`, `perimeter_mean`, etc., which describe the characteristics of the tumor.
 
-### Preprocessing Steps
-1. Dropped irrelevant columns (e.g., `Unnamed: 32`).
-2. Split the dataset into training and testing sets.
-3. Applied feature scaling using `StandardScaler` to normalize the data.
-
 ## Code Structure
 1. **Data Loading and Preprocessing**:
    - Load the dataset using `pandas`.
@@ -34,34 +29,7 @@ The dataset contains the following columns:
 4. **Evaluation**:
    - Calculate the accuracy of the model on the test set.
 
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd python-k-nearest-neighbors
-   ```
-2. Install the required libraries:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the Jupyter Notebook:
-   ```bash
-   jupyter notebook knn.ipynb
-   ```
-
 ## Example Output
 - **Accuracy**: Displays the accuracy of the k-NN model on the test set.
 - **Scatter Plot**: Visualizes the predicted benign and malignant samples in the feature space.
 
-## Dependencies
-- `numpy`
-- `pandas`
-- `matplotlib`
-- `scikit-learn`
-
-## Notes
-- Ensure the dataset (`dataset.csv`) is in the same directory as the notebook.
-- The value of `k` can be adjusted in the code to observe its effect on accuracy.
-
-## License
-This project is licensed under the MIT License.
